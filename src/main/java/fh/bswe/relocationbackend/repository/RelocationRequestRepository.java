@@ -7,6 +7,8 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 @CrossOrigin(origins = "*")
-@RepositoryRestResource(collectionResourceRel = "request", path = "request", excerptProjection = RelocationRequestProjection.class)
-public interface RelocationRequestRepository extends CrudRepository<RelocationRequest, Integer> {
-}
+@RepositoryRestResource(
+    collectionResourceRel = "request",
+    path = "request",
+    excerptProjection = RelocationRequestProjection.class)
+public interface RelocationRequestRepository extends CrudRepository<RelocationRequest, Integer> {}
