@@ -8,6 +8,8 @@ import java.time.OffsetDateTime;
 @Entity(name = "request")
 @Table(name = "request")
 public class RelocationRequest implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false, nullable = false)
